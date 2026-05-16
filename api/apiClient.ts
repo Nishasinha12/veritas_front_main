@@ -8,9 +8,7 @@ type AuthState = {
   logout: () => void;
 };
 // Uses your local IP in dev mode, Render URL in production
-const BASE_URL = __DEV__
-  ? "http://192.168.43.63:5000"
-  : process.env.EXPO_PUBLIC_API_URL || "https://veritas-main-backend-3.onrender.com";
+const BASE_URL = "https://veritas-main-backend-3.onrender.com";
 
 
 // Create axios instance
